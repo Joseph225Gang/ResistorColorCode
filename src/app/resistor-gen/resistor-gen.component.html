@@ -1,0 +1,32 @@
+<div>
+  <h1 style="text-align:center;">電阻色碼</h1>
+</div>
+<br>
+<br>
+<div>
+  <div class="resistorEmptyBand emptyBand"></div>
+  <div class="resistorColorBand" (click)='setColorFirstBand()'></div>
+  <div class="resistorEmptyBand emptyBand"></div>
+  <div class="resistorColorBand" (click)='setColorSecondBand()'></div>
+  <div class="resistorEmptyBand emptyBand"></div>
+  <div class="resistorColorBand" (click)='setColorThirdBand()'></div>
+  <div class="resistorEmptyBand emptyBand"></div>
+  <div class="resistorColorBand" (click)='setColorFourthBand()'></div>
+  <div class="resistorEmptyBand emptyBand"></div>
+</div>
+<br>
+<div style="position: relative;left:500px">
+<label>Choose color&nbsp;</label>
+<select (change)='selectColor()'>
+  <option value="black">black</option>
+  <option value="brown">brown</option>
+  <option value="red">red</option>
+  <option value="orange">orange</option>
+  <option value="yellow">yellow</option>
+  <option value="green">green</option>
+  <option value="blue">blue</option>
+  <option value="violet">violet</option>
+  <option value="gray">gray</option>
+  <option value="white">white</option>
+</select>
+</div>

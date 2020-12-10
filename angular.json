@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "angular-resistor-generator"
+  "defaultProject": "angular-resistor-generator",
+  "cli": {
+    "analytics": "cbdd630c-f6f4-40cf-8e34-e5a22eeb96b0"
+  }
 }

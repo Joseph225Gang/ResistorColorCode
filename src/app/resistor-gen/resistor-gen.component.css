@@ -1,0 +1,13 @@
+.resistorEmptyBand, .resistorColorBand{
+  width: 100px;
+  height: 250px;
+  display: inline-block;
+  position: relative;
+  left:150px;
+  top:40%;
+  border: 5px solid black;
+}
+
+.emptyBand{
+  background-color: #FFFFCC;
+}
