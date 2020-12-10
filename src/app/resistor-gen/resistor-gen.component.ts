@@ -8,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ResistorGenComponent implements OnInit {
 
   color: string = 'white';
+  colorFourBand: string[] = [];
   backgroundColor: string = 'background-color';
   constructor() { }
 
   ngOnInit(): void {
+    for(let i = 0; i < 4; i++)
+      this.colorFourBand.push('');
   }
 
   selectColor()
@@ -19,23 +22,8 @@ export class ResistorGenComponent implements OnInit {
     this.color = document.querySelector('select')?.value ?? 'white';
   }
 
-  setColorFirstBand()
+  setColorBand(num:number)
   {
-    document.getElementsByClassName('resistorColorBand')[0].setAttribute("style", `${this.backgroundColor}: ${this.color}`);
-  }
-
-  setColorSecondBand()
-  {
-    document.getElementsByClassName('resistorColorBand')[1].setAttribute("style", `${this.backgroundColor}: ${this.color}`);
-  }
-
-  setColorThirdBand()
-  {
-    document.getElementsByClassName('resistorColorBand')[2].setAttribute("style", `${this.backgroundColor}: ${this.color}`);
-  }
-
-  setColorFourthBand()
-  {
-    document.getElementsByClassName('resistorColorBand')[3].setAttribute("style", `${this.backgroundColor}: ${this.color}`);
+    document.getElementsByClassName('resistorColorBand')[num].setAttribute("style", `${this.backgroundColor}: ${this.color}`);
   }
 }
