@@ -1,9 +1,14 @@
+body{
+  font-size: 16px;
+}
+
+
 .resistorEmptyBand, .resistorColorBand{
-  width: 100px;
-  height: 250px;
+  width: 6rem;
+  height: 16rem;
   display: inline-block;
   position: relative;
-  left:150px;
+  left:9rem;
   top:40%;
   border: 5px solid black;
 }

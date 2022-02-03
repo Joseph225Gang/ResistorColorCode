@@ -13,8 +13,6 @@ export class ResistorGenComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    for(let i = 0; i < 4; i++)
-      this.colorFourBand.push('');
   }
 
   selectColor()
@@ -22,8 +20,15 @@ export class ResistorGenComponent implements OnInit {
     this.color = document.querySelector('select')?.value ?? 'white';
   }
 
-  setColorBand(num:number)
+  setColorBand(bandNum:ResistorColorBand)
   {
-    document.getElementsByClassName('resistorColorBand')[num].setAttribute("style", `${this.backgroundColor}: ${this.color}`);
+    document.getElementsByClassName('resistorColorBand')[bandNum].setAttribute("style", `${this.backgroundColor}: ${this.color}`);
   }
+}
+
+export enum ResistorColorBand{
+  FirstBand = 0,
+  SecondBand,
+  ThirdBand,
+  FourthBand
 }
