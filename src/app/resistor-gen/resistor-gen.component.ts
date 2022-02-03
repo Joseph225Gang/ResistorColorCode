@@ -20,7 +20,7 @@ export class ResistorGenComponent implements OnInit {
     this.color = document.querySelector('select')?.value ?? 'white';
   }
 
-  setColorBand(bandNum:ResistorColorBand)
+  setColorBand(bandNum: ResistorColorBand)
   {
     document.getElementsByClassName('resistorColorBand')[bandNum].setAttribute("style", `${this.backgroundColor}: ${this.color}`);
   }
