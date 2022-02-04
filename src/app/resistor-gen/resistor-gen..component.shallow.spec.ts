@@ -58,7 +58,7 @@ describe('ResistorGenComponent (shallow tests)', () => {
 
   it('if you do not select the color, the default background color of the resistor band will be white', () => {
     fixture.detectChanges();
-    fixture.componentInstance.setColorBand(0);
+    fixture.componentInstance.setColorBand(ResistorColorBand.FirstBand);
     let bandColor = fixture.debugElement.query(By.css(theBandClassName));
     expect(bandColor.nativeElement.style.backgroundColor).toEqual(whiteColor);
   })
