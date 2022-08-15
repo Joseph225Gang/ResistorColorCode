@@ -1,4 +1,4 @@
 # AngularResistorGenerator
 
-實作電阻色碼
+Resistor Color Code
 Angular, Angular Integration Test
